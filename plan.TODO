@@ -2,15 +2,8 @@ TODO
 
 - run ngrok with port 22 -- via systemd
 
-- every so often -- check ngrok URL
-	- if it has changed, share it
-	- can this be triggered by an event: https://stackoverflow.com/questions/44946465/how-do-i-register-for-systemd-service-lifecycle-events
+- update url: https://stackoverflow.com/questions/44946465/how-do-i-register-for-systemd-service-lifecycle-events
 	- something like: `ExecStartPost=/bin/script.sh`
-		- including stopping existing ngroks -- something like: kill -9 $(ps -ef | grep 'ngrok' | grep -v 'grep' | grep -v 'vim' | awk '{print $2}')
 
 - ubuntu needs to default to SSD boot
-
-- systemd:
-	- run ngrok
-	- run regular process to check URL
 
