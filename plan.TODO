@@ -8,7 +8,7 @@ TODO
 	- something like: `ExecStartPost=/bin/script.sh`
 		- including stopping existing ngroks -- something like: kill -9 $(ps -ef | grep 'ngrok' | grep -v 'grep' | grep -v 'vim' | awk '{print $2}')
 
-
+- ubuntu needs to default to SSD boot
 
 - systemd:
 	- run ngrok
