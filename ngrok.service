@@ -2,9 +2,12 @@
 Description=ngrok
 
 [Service]
-ExecStart/usr/local/bin/ngrok tcp 22
-ExecStartPost=/usr/local/bin/get_ngrok_url.sh
+ExecStart=/snap/bin/ngrok tcp 22
+ExecStartPost=/bin/bash /usr/local/bin/get_ngrok_url.sh
 Restart=always
 RestartSec=3
 Type=simple
+
+[Install]
+WantedBy=multi-user.target
 
