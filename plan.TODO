@@ -1,9 +1,0 @@
-TODO
-
-- run ngrok with port 22 -- via systemd
-
-- update url: https://stackoverflow.com/questions/44946465/how-do-i-register-for-systemd-service-lifecycle-events
-	- something like: `ExecStartPost=/bin/script.sh`
-
-- ubuntu needs to default to SSD boot
-
